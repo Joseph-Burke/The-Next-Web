@@ -34,8 +34,60 @@ html {
 
 .black-nav-bar li {
   margin: 0px 5px;
+  cursor: pointer;
 }
 
+.black-nav-bar li:hover {
+  color: #fff;
+}
+.nav-bar-news {
+  color: white;
+}
+
+.dropdown-events {
+  position: relative;
+}
+
+.dropdown-events-content {
+  display: none;
+  position: absolute;
+  
+  z-index: 2;
+  background-color: aliceblue;
+}
+
+.dropdown-events-content p {
+  color:hsla(0,0%,100%,.6);
+  width: 200px;
+  border-bottom: 0.01rem solid hsla(0,0%,20%,.6);
+  background-color: black;
+  padding: 5px;
+  font-size: 1.35rem;
+}
+.dropdown-events:hover .dropdown-events-content,
+.dropdown-events:hover .dropdown-events-content p{
+  display: block;
+  animation: dropdown-animation .4s 1;
+  left: -8px;
+  top: 22px;
+}
+
+.dropdown-events-content :hover {
+  
+}
+
+.dropdown-events-content p:hover {
+  display: block;
+  color: #fff;
+}
+@keyframes dropdown-animation {
+  from {
+    top: 36px;
+  }
+  to {
+    top: 22px;
+  }
+}
 .white-nav-bar {
   font-family: Rajdhani;
   color: #aaa;
@@ -43,6 +95,7 @@ html {
   font-size: 2.2rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
+  margin-left: -7px;
 }
 
 .white-nav-bar li {
