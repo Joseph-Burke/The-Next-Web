@@ -9,18 +9,13 @@ html {
   font-size: 10px;
 }
 
-.black-nav-bar {
-  background-color: black;
-  color: hsla(0,0%,100%,.6);
-  font-size: 1.3rem;
-  letter-spacing: 0.1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-}
-
 .black-nav-bar,
 .white-nav-bar {
   padding: 8.5px 15px;
+}
+
+.nav-bar-right {
+  float: right;
 }
 
 .black-nav-bar li,
@@ -28,10 +23,28 @@ html {
   display: inline;
 }
 
+.black-nav-bar {
+  background-color: black;
+  color: hsla(0,0%,100%,.6);
+  font-size: 1.3rem;
+  letter-spacing: 0.01rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
 .black-nav-bar li {
   margin: 0px 5px;
 }
 
-.nav-bar-right {
-  float: right;
+.white-nav-bar {
+  font-family: Rajdhani;
+  color: #aaa;
+  font-variant: small-caps;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
+
+.white-nav-bar li {
+  padding: 10px 10px;
 }
