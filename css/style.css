@@ -10,8 +10,8 @@ html {
 }
 
 .white-nav-bar {
-  padding: 8.5px 15px;
-}
+  padding: 0px 15px;
+} 
 
 .black-nav-bar {
   height: auto;
@@ -20,6 +20,17 @@ html {
 
 .nav-bar-right {
   float: right;
+}
+
+.white-nav-bar .nav-bar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.white-nav-bar .nav-bar-right button {
+  padding: 5px;
+  font-size: 1rem;
 }
 
 .black-nav-bar li,
@@ -40,6 +51,11 @@ html {
   margin: 0px 5px;
   cursor: pointer;
   padding: 8.5px 0px;
+}
+
+.white-nav-bar li {
+  cursor: pointer;
+  padding: 9px 0px;
 }
 
 .black-nav-bar li:hover,
@@ -93,6 +109,7 @@ html {
     top: 33px;
   }
 }
+
 .white-nav-bar {
   font-family: Rajdhani;
   color: #aaa;
@@ -100,9 +117,8 @@ html {
   font-size: 2.2rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
-  margin-left: -7px;
 }
 
-.white-nav-bar li {
-  padding: 10px 10px;
+.white-nav-bar li:hover {
+  color: black;
 }
