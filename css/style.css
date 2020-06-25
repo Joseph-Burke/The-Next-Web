@@ -44,16 +44,19 @@ html {
 
 .black-nav-bar li:hover,
 .nav-bar-news,
-.dropdown-events-content p:hover {
+.dropdown-events-content p:hover,
+.dropdown-business-content p:hover {
   color: #fff;
 }
 
-.dropdown-events {
+.dropdown-events,
+.dropdown-business {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-events-content {
+.dropdown-events-content,
+.dropdown-business-content {
   display: none;
   position: absolute;
 
@@ -62,17 +65,20 @@ html {
   background-color: aliceblue;
 }
 
-.dropdown-events-content p {
+.dropdown-events-content p,
+.dropdown-business-content p {
   color:hsla(0,0%,100%,.6);
   width: 200px;
   border-bottom: 0.01rem solid hsla(0,0%,20%,.6);
-  background-color: black;
+  background-color: #131313;
   padding: 5px;
   font-size: 1.35rem;
 }
 
 .dropdown-events:hover .dropdown-events-content,
-.dropdown-events:hover .dropdown-events-content p{
+.dropdown-events:hover .dropdown-events-content p,
+.dropdown-business:hover .dropdown-business-content,
+.dropdown-business:hover .dropdown-business-content {
   display: block;
   animation: dropdown-animation .4s 1;
   left: -8px;
