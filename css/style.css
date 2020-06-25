@@ -42,11 +42,10 @@ html {
   padding: 8.5px 0px;
 }
 
-.black-nav-bar li:hover {
+.black-nav-bar li:hover,
+.nav-bar-news,
+.dropdown-events-content p:hover {
   color: #fff;
-}
-.nav-bar-news {
-  color: white;
 }
 
 .dropdown-events {
@@ -80,12 +79,6 @@ html {
   top: 33px;
 }
 
-.dropdown-events-content:hover 
-
-.dropdown-events-content p:hover {
-  display: block;
-  color: #fff;
-}
 @keyframes dropdown-animation {
   from {
     top: 40px;
