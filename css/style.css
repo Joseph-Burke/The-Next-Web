@@ -9,6 +9,10 @@ html {
   font-size: 10px;
 }
 
+.tnw-top-logo-container {
+  display: none;
+}
+
 .white-nav-bar {
   padding: 0px 15px;
 } 
@@ -165,6 +169,10 @@ main {
   .cover-grid {
     height: 53vh;
   }
+  .tnw-top-logo-container {
+    display: block;
+    position: fixed;
+  }
 }
 
 .cover-grid-story-1,
@@ -175,4 +183,29 @@ main {
 
 .cover-grid-story-1 {
   grid-area: main-story;
+}
+
+.latest-news {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.latest-news h2 {
+  color: red;
+  font-size: 1.8rem;
+}
+.latest-news-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.latest-news-box {
+  width: 332px;
+  height: 241px;
+  margin: 5px;
+  background-color: lightgrey;
+  border: 1px solid black;
 }
