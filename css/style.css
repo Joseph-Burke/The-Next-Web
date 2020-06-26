@@ -140,6 +140,16 @@ main {
   word-spacing: 0.12rem;
 }
 
+
+@media screen and (max-width: 768px) {
+  .ecosystems-text {
+    display: none;
+  }
+
+  .conference-banner {
+    padding: 20px 125px;
+  }
+}
 /* Cover Grid */
 
 .cover-grid {
@@ -149,6 +159,12 @@ main {
   grid-template-areas: "main-story ." "main-story .";
   grid-gap: 8px;
   height: 72vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cover-grid {
+    height: 53vh;
+  }
 }
 
 .cover-grid-story-1,
