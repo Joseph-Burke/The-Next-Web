@@ -352,10 +352,58 @@ main {
 }
 
 .latest-deals-card {
-  flex-grow: 1;
-  min-width: 30%;
-  max-width: 31.15%;
+  
+  width: 25%;
+  max-width: 25%;
   height: 200px;
   background-color: #666;
-  margin: 8px;
+  border: 1px solid black;
+ 
+}
+
+@media screen and (max-width: 1023px) {
+  .latest-deals-card {
+    width: 33.33%;
+    max-width: 33.33%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .latest-deals-card {
+    width: 33.33%;
+    max-width: 33.33%;
+    height: 200px;
+  }
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+}
+.footer-socials-section {
+  height: 161px;
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socials-icons li {
+  display: inline-block;
+  background-color: lightgray;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.social-icons {
+  font-size: 2rem;
+}
+
+.footer-copyright-section {
+  height: 97px;
+  background-color: #000;
 }
