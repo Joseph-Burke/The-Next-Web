@@ -456,5 +456,13 @@ footer {
   font-size: 2em;
   margin: 0px 8px;
   font-weight: 500;
+}
 
+.footer-copyright-section {
+  color: #aaa;
+}
+
+.stackpath-logo {
+  height: 1em;
+  width: auto;
 }
