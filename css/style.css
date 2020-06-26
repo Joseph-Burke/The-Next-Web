@@ -195,7 +195,6 @@ main {
   font-size: 1.8rem;
 }
 .latest-news-container {
-  
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -203,9 +202,42 @@ main {
 }
 
 .latest-news-box {
-  width: 332px;
+  /* width: 332px; */
+  /* flex-basis: 332px; */
+  min-width: 240px;
+  flex: 1;
   height: 241px;
   margin: 5px;
   background-color: lightgrey;
   border: 1px solid black;
+}
+
+@media screen and (max-width: 1023px) {
+  .latest-news-box {
+    max-width: 32%;
+    flex: 1;
+  }
+
+  .latest-news-container {
+    justify-content: flex-start;
+  }
+}
+
+/* @media screen and (max-width: 767px) {
+  .latest-news-container {
+    flex-direction: column;
+    height: 720px;
+  }
+
+  .latest-news-box {
+    flex: 1;
+    max-width: none;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .latest-news-box {
+    min-width: 100%;
+    height: 95px;
+  }
 }
