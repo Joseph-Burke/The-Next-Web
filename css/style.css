@@ -299,3 +299,24 @@ main {
   border: 1px solid black;
   margin: 8px;
 }
+
+@media screen and (max-width: 767px) {
+  .funding-rounds-card {
+    min-width: 100%;
+    height: 95px;
+  }
+
+  .funding-rounds-card-container {
+    flex-wrap: wrap; 
+  }
+}
+
+/* Sections container */
+
+.sections-container {
+  display: flex;
+}
+
+.sections-card {
+
+}
