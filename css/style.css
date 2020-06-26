@@ -382,28 +382,79 @@ main {
 footer {
   margin-top: 50px;
 }
-.footer-socials-section {
+.footer-social-section {
   height: 161px;
   background-color: #131313;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer-socials-icons li {
-  display: inline-block;
-  background-color: lightgray;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  margin-right: 10px;
-}
-
-.social-icons {
-  font-size: 2rem;
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 25%;
+  justify-content: space-between;
 }
 
 .footer-copyright-section {
   height: 97px;
   background-color: #000;
+}
+
+.social-icon {
+  font-size: 2.2rem;
+  background-color: #333;
+  color: #eee;
+  border-radius: 100%;
+  padding: 10px 0px;
+}
+
+.footer-social-icons .fa-youtube {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.footer-social-icons .fa-envelope {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-social-icons .fa-facebook-square,
+.footer-social-icons .fa-twitter {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.footer-social-icons .fa-instagram,
+.footer-social-icons .fa-rss {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footer-social-icons .fa-pinterest-p {
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: -1px;
+  margin-right: -5px;
+}
+
+/* Footer Site Links */
+
+.footer-site-links {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.footer-site-link {
+  display: inline;
+  font-family: Rajdhani, sans-serif;
+  font-variant: small-caps;
+  color: #aaa;
+  font-size: 2em;
+  margin: 0px 8px;
+  font-weight: 500;
+
 }
