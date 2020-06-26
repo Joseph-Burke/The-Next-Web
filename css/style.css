@@ -122,3 +122,14 @@ html {
 .white-nav-bar li:hover {
   color: black;
 }
+
+/* Conference Banner */
+
+.conference-banner {
+  padding: 8px 15px;
+  background-color: #fd3;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  word-spacing: 0.12rem;
+}
