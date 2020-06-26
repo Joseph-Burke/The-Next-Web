@@ -123,6 +123,12 @@ html {
   color: black;
 }
 
+/* Main */
+
+main {
+  padding: 1px 8px 0px 8px;
+}
+
 /* Conference Banner */
 
 .conference-banner {
@@ -132,4 +138,25 @@ html {
   font-size: 1.2rem;
   font-weight: 100;
   word-spacing: 0.12rem;
+}
+
+/* Cover Grid */
+
+.cover-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "main-story ." "main-story .";
+  grid-gap: 8px;
+  height: 72vh;
+}
+
+.cover-grid-story-1,
+.cover-grid-story-2, 
+.cover-grid-story-3 {
+  background: #333;
+}
+
+.cover-grid-story-1 {
+  grid-area: main-story;
 }
