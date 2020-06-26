@@ -342,5 +342,20 @@ main {
   }
 }
 
+/* Latest deals */
 
+.latest-deals-container {
+  display: flex;
+  max-width: 1152px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
 
+.latest-deals-card {
+  flex-grow: 1;
+  min-width: 30%;
+  max-width: 31.15%;
+  height: 200px;
+  background-color: #666;
+  margin: 8px;
+}
