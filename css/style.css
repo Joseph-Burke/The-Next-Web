@@ -221,6 +221,30 @@ main {
   .latest-news-container {
     justify-content: flex-start;
   }
+  
+  .funding-rounds-card-pipe {
+    display: none;
+  }
+
+  .funding-rounds-card {
+    flex: 1;
+    min-width: 229px;
+    height: 270px;
+    background: grey;
+    border: 1px solid black;
+    margin: 8px;
+  }
+  
+  .funding-rounds header {
+    flex-direction: column;
+  }
+
+  .funding-rounds header ul {
+    
+    
+    
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -231,8 +255,47 @@ main {
 }
 
 /* Funding rounds */
+.funding-rounds {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.funding-rounds header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.funding-rounds-header {
+  color: red;
+  font-size: 1.8rem;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.funding-rounds header ul{
+  display: flex;
+  list-style-type: none;
+  color: red;
+  font-size: 1.6rem;
+  
+}
+
+.funding-rounds header ul li {
+  margin: 0 5px;
+  
+}
+
+.funding-rounds-card-container {
+  display: flex;
+  
+
+}
+
 .funding-rounds-card {
-  width: 228px;
+  flex: 1;
   height: 270px;
   background: grey;
+  border: 1px solid black;
+  margin: 8px;
 }
