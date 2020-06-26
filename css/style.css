@@ -223,21 +223,16 @@ main {
   }
 }
 
-/* @media screen and (max-width: 767px) {
-  .latest-news-container {
-    flex-direction: column;
-    height: 720px;
-  }
-
-  .latest-news-box {
-    flex: 1;
-    max-width: none;
-  }
-} */
-
 @media screen and (max-width: 767px) {
   .latest-news-box {
     min-width: 100%;
     height: 95px;
   }
+}
+
+/* Funding rounds */
+.funding-rounds-card {
+  width: 228px;
+  height: 270px;
+  background: grey;
 }
