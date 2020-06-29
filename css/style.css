@@ -266,6 +266,7 @@ main {
 .latest-news h2 {
   color: red;
   font-size: 1.8rem;
+  padding-left: 10px;
 }
 .latest-news-container {
   display: flex;
@@ -275,14 +276,15 @@ main {
 }
 
 .latest-news-box {
-  /* width: 332px; */
-  /* flex-basis: 332px; */
   min-width: 240px;
   flex: 1;
   height: 241px;
-  padding: 20px;
-  background-color: lightgrey;
-  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
 }
 
 .latest-news-box img {
@@ -290,6 +292,72 @@ main {
   height: auto;
 }
 
+.latest-news-box-1 .latest-news-article-image {
+  background: url("/assets/images/article-image-california-diesel.png");
+  background-size: cover;
+}
+
+.latest-news-box-2 .latest-news-article-image {
+  background: url("/assets/images/article-image-volkswagen.jpg");
+  background-size: cover;
+}
+
+.latest-news-box-3 .latest-news-article-image {
+  background: url("/assets/images/article-image-charger.jpg");
+  background-size: cover;
+}
+
+.latest-news-box-4 .latest-news-article-image {
+  background: url("/assets/images/article-image-black-pink.jpg");
+  background-size: cover;
+}
+
+.latest-news-box-5 .latest-news-article-image {
+  background: url("/assets/images/article-image-cyber-security.png");
+  background-size: cover;
+}
+
+.latest-news-box-6 .latest-news-article-image {
+  background: url("/assets/images/article-image-digital-poetry.png");
+  background-size: cover;
+}
+
+.latest-news-box-7 .latest-news-article-image {
+  background: url("/assets/images/article-image-space-exploration.png");
+  background-size: cover;
+}
+
+.latest-news-box-8 .latest-news-article-image {
+  background: url("/assets/images/article-image-artificial-intelligence.jpg");
+  background-size: cover;
+}
+
+.latest-news-article-image {
+  height: 135px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 7px;
+}
+
+.latest-news-article-title {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 7px;
+  font-family: Helvetica, sans-serif;
+}
+
+.latest-news-article-info {
+  list-style-type: none;
+  font-size: 1.3rem;
+  color: #aaa;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.latest-news-article-info li {
+  display: inline;
+}
 
 /* Funding rounds */
 .funding-rounds {
