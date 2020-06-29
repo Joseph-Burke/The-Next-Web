@@ -383,6 +383,7 @@ footer {
   align-items: center;
   list-style-type: none;
   justify-content: space-between;
+  width: 370px;
 }
 
 .footer-copyright-section {
@@ -396,6 +397,12 @@ footer {
   color: #eee;
   border-radius: 100%;
   padding: 10px 0px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background-color: #000;
 }
 
 .footer-social-icons .fa-youtube {
