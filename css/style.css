@@ -382,7 +382,6 @@ footer {
   display: flex;
   align-items: center;
   list-style-type: none;
-  width: 25%;
   justify-content: space-between;
 }
 
