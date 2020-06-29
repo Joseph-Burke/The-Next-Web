@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html {
@@ -215,13 +214,29 @@ main {
   height: 72vh;
 }
 
+@media screen and (min-width: 1024px) {
+  .cover-grid {
+    height: 75vh;
+    max-height: 560px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cover-grid {
     height: 53vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "main-story" "." ".";
+    min-height: 90vh;
   }
+
   .tnw-top-logo-container {
     display: block;
     position: fixed;
+  }
+
+  .grid-story-tnw-logo {
+    display: none!important;
   }
 }
 
@@ -249,21 +264,55 @@ main {
 }
 
 .story-container {
-  clear: both;
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .cover-grid-story-2 {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.9 ), rgba(247, 65, 16, 0.4) 75%), url("/assets/images/cc_series_empty-1200x628.jpg");
   background-size: cover;
+  padding: 20px 20px 30px 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cover-story-title {
+  color: white;
+  font-size: 2.7rem;
+  font-family: Helvetica;
+}
+
+.cover-story-section {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  font-family: Rajdhani, sans-serif;
 }
 
 .cover-grid-story-3 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6 ) 90%), url("/assets/images/charger-image.jpeg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6 ) 90%), url("/assets/images/bitcoin-cover-image.jpg");
   background-size: cover;
+  padding: 20px 20px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
+.cover-story-info {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 4px;
+}
+
+.cover-story-info li {
+  display: inline;
+  margin: 4px;
+}
+
 /* LATEST NEWS */
 
 .latest-news {
@@ -288,9 +337,14 @@ main {
   min-width: 240px;
   flex: 1;
   height: 241px;
-  padding: 5px;
+  padding: 20px;
   background-color: lightgrey;
   border: 1px solid black;
+}
+
+.latest-news-box img {
+  width: 80%;
+  height: auto;
 }
 
 @media screen and (max-width: 1023px) {
