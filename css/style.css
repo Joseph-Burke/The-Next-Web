@@ -42,6 +42,8 @@ html {
   font-weight: 100;
 }
 
+
+
 .black-nav-bar li {
   cursor: pointer;
   padding: 8.5px 0px;
@@ -137,42 +139,8 @@ html {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 1023px) {
-  .white-nav-bar .nav-bar-right {
-    display: none;
-  }
 
-  .black-nav-bar, 
-  .conference-banner,
-  .white-nav-bar  {
-    padding-left: 120px;
-  }
-}
 
-.top-left-tnw-logo img{
-  width: 66px;
-  height: 16px;
-}
-
-.white-nav-bar li:hover {
-  color: black;
-}
-
-@media screen and (min-width: 1023px) {
-  .top-left-tnw-logo {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .black-nav-bar {
-    display: none;
-  }
-
-  .top-left-tnw-logo {
-    height: 46px;
-  }
-}
 /* Main */
 
 main {
@@ -193,16 +161,14 @@ main {
   top: 46px;
 }
 
-
-@media screen and (max-width: 768px) {
-  .ecosystems-text {
-    display: none;
-  }
-
-  .conference-banner {
-    padding: 20px 125px;
-  }
+.grid-story-headline {
+  color: white;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: Helvetica;
 }
+
+
 /* Cover Grid */
 
 .cover-grid {
@@ -214,31 +180,6 @@ main {
   height: 72vh;
 }
 
-@media screen and (min-width: 1024px) {
-  .cover-grid {
-    height: 75vh;
-    max-height: 560px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cover-grid {
-    height: 53vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "main-story" "." ".";
-    min-height: 90vh;
-  }
-
-  .tnw-top-logo-container {
-    display: block;
-    position: fixed;
-  }
-
-  .grid-story-tnw-logo {
-    display: none!important;
-  }
-}
 
 .cover-grid-story-1,
 .cover-grid-story-2, 
@@ -268,7 +209,9 @@ main {
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  padding: 20px 20px 30px 15px;
 }
+
 
 .cover-grid-story-2 {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.9 ), rgba(247, 65, 16, 0.4) 75%), url("/assets/images/cc_series_empty-1200x628.jpg");
@@ -347,41 +290,6 @@ main {
   height: auto;
 }
 
-@media screen and (max-width: 1023px) {
-  .latest-news-box {
-    max-width: 32%;
-    flex: 1;
-  }
-
-  .latest-news-container {
-    justify-content: flex-start;
-  }
-  
-  .funding-rounds-card-pipe {
-    display: none;
-  }
-
-  .funding-rounds-card {
-    flex: 1;
-    min-width: 229px;
-    height: 270px;
-    background: grey;
-    border: 1px solid black;
-    padding: 8px;
-  }
-  
-  .funding-rounds header {
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (max-width: 767px) {
-  .latest-news-box {
-    min-width: 100%;
-    height: 95px;
-  }
-}
 
 /* Funding rounds */
 .funding-rounds {
@@ -421,16 +329,6 @@ main {
   margin: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .funding-rounds-card {
-    flex-basis: calc(100% - 16px);
-    height: 95px;
-  }
-
-  .funding-rounds-card-container {
-    flex-wrap: wrap; 
-  }
-}
 
 /* Sections container */
 
@@ -450,18 +348,6 @@ main {
   margin: 8px;
 }
 
-@media screen and (max-width: 1023px) {
-  .sections-card {
-    flex-basis: calc(50% - 16px);
-    flex-grow: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .sections-card {
-    flex-basis: calc(100% - 16px);
-  }
-}
 
 /* Latest deals */
 
@@ -481,21 +367,7 @@ main {
  
 }
 
-@media screen and (max-width: 1023px) {
-  .latest-deals-card {
-    width: 33.33%;
-    max-width: 33.33%;
-    height: 200px;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .latest-deals-card {
-    width: 100%;
-    height: 88px;
-    max-width: none;
-  }
-}
 
 /* Footer */
 
@@ -614,8 +486,137 @@ footer {
   width: auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .top-left-tnw-logo {
+    display: none;
+  }
+} 
+
+
+@media screen and (max-width: 1023px) {
+  .white-nav-bar .nav-bar-right {
+    display: none;
+  }
+
+  .black-nav-bar, 
+  .conference-banner,
+  .white-nav-bar  {
+    padding-left: 120px;
+  }
+
+  
+  
+  .top-left-tnw-logo img{
+    width: 66px;
+    height: 16px;
+  }
+  
+  
+  .white-nav-bar li:hover {
+    color: black;
+  }
+
+  
+  .cover-grid {
+    height: 75vh;
+    max-height: 560px;
+  }
+  .latest-news-box {
+    max-width: 32%;
+    flex: 1;
+  }
+
+  .latest-news-container {
+    justify-content: flex-start;
+  }
+  
+  .funding-rounds-card-pipe {
+    display: none;
+  }
+
+  .funding-rounds-card {
+    flex: 1;
+    min-width: 229px;
+    height: 270px;
+    background: grey;
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .funding-rounds header {
+    flex-direction: column;
+  }
+  .sections-card {
+    flex-basis: calc(50% - 16px);
+    flex-grow: 0;
+  }
+  .latest-deals-card {
+    width: 33.33%;
+    max-width: 33.33%;
+    height: 200px;
+  }
+
+}
 @media screen and (max-width: 767px) {
+  .black-nav-bar {
+    display: none;
+  }
+
+  .top-left-tnw-logo {
+    height: 46px;
+  }
+  .ecosystems-text {
+    display: none;
+  }
+
+  .conference-banner {
+    padding: 20px 125px;
+  }
+  .cover-grid {
+    height: 53vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "main-story" "." ".";
+    min-height: 90vh;
+  }
+
+  .tnw-top-logo-container {
+    display: block;
+    position: fixed;
+  }
+
+  .grid-story-tnw-logo {
+    display: none!important;
+  }
+
+  .grid-story-headline {
+    font-size: 2.5rem;
+  }
+  .latest-news-box {
+    min-width: 100%;
+    height: 95px;
+  }
+  .funding-rounds-card {
+    flex-basis: calc(100% - 16px);
+    height: 95px;
+  }
+
+  .funding-rounds-card-container {
+    flex-wrap: wrap; 
+  }
+  .sections-card {
+    flex-basis: calc(100% - 16px);
+  }
+  .latest-deals-card {
+    width: 100%;
+    height: 88px;
+    max-width: none;
+  }
   .footer-copyright-section {
     flex-direction: column;
   }
+  .white-nav-items {
+    display: none;
+  }
 }
+
