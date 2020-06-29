@@ -391,10 +391,8 @@ main {
 .funding-rounds-card {
   flex: 1;
   height: 270px;
-  background: grey;
-  border: 1px solid black;
+  background: white;
   margin: 8px;
-  padding: 10px;
   font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -407,11 +405,40 @@ main {
 }
 
 .funding-rounds-card-logo {
-  height: 50px;
+  height: 55px;
   width: auto;
+  position: relative;
+  top: 10px;
+  left: 10px;
   float: left;
 }
 
+.funding-rounds-card-title h4 {
+  background: #f42;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: white;
+  padding: 10px 0px 10px 77px;
+  font-weight: 700;
+}
+
+.funding-rounds-details {
+  padding: 10px 0px 10px 77px;
+  font-size: 1.4rem;
+  background: rgba(255,68,34,.12);
+}
+
+.funding-rounds-details h5 {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.funding-rounds-details h6 {
+  font-size: 1.3rem;
+  color: rgba(0,0,0,.5);
+  font-family: Rajdhani, sans-serif;
+  font-weight: 400;
+}
 
 .funding-rounds-card-tags {
   display: flex;
@@ -419,8 +446,32 @@ main {
   justify-content: space-evenly;
   align-items: flex-start;
   list-style-type: none;
+  padding-left: 10px; 
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #555;
+  background: rgba(255, 67, 34, 0.05);
+  border-bottom: 1px solid rgba(255, 67, 34, 0.25);
 }
 
+.funding-rounds-card-tags i {
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.funding-rounds-card-description {
+  background: rgba(255, 67, 34, 0.05);
+  padding: 12px 20px 10px 15px; 
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.funding-rounds-card-description span {
+    color: #aaa;
+}
 
 /* Sections container */
 
