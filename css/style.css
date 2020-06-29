@@ -59,7 +59,7 @@ html {
 
 .white-nav-bar li {
   cursor: pointer;
-  padding: 9px 0px;
+  padding: 9px 20px 9px 5px;
 }
 
 .black-nav-bar li:hover,
@@ -185,6 +185,8 @@ main {
   grid-area: main-story;
 }
 
+/* LATEST NEWS */
+
 .latest-news {
   max-width: 1152px;
   margin: 0 auto;
@@ -207,7 +209,7 @@ main {
   min-width: 240px;
   flex: 1;
   height: 241px;
-  margin: 5px;
+  padding: 5px;
   background-color: lightgrey;
   border: 1px solid black;
 }
@@ -232,17 +234,11 @@ main {
     height: 270px;
     background: grey;
     border: 1px solid black;
-    margin: 8px;
+    padding: 8px;
   }
   
   .funding-rounds header {
     flex-direction: column;
-  }
-
-  .funding-rounds header ul {
-    
-    
-    
   }
 
 }
@@ -269,8 +265,6 @@ main {
 .funding-rounds-header {
   color: red;
   font-size: 1.8rem;
-  margin-left: 5px;
-  margin-bottom: 5px;
 }
 
 .funding-rounds header ul{
@@ -278,12 +272,6 @@ main {
   list-style-type: none;
   color: red;
   font-size: 1.6rem;
-  
-}
-
-.funding-rounds header ul li {
-  margin: 0 5px;
-  
 }
 
 .funding-rounds-card-container {
@@ -441,6 +429,7 @@ footer {
   margin-right: -5px;
 }
 
+
 /* Footer Site Links */
 
 .footer-site-links {
@@ -460,9 +449,30 @@ footer {
 
 .footer-copyright-section {
   color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-family: Helvetica, sans-serif;
 }
 
-.stackpath-logo {
-  height: 1em;
+.footer-copyright-span,
+.footer-TNW-logo {
+  margin: 0 3.5px;
+}
+
+.footer-heart {
+  color: red;
+
+}
+
+.stackpath-logo, .footer-TNW-logo {
+  height: 1.3rem;
   width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-copyright-section {
+    flex-direction: column;
+  }
 }
