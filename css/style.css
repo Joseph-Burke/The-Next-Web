@@ -340,7 +340,6 @@ main {
 }
 
 .latest-deals-card {
-  
   width: 25%;
   max-width: 25%;
   height: 200px;
@@ -359,9 +358,9 @@ main {
 
 @media screen and (max-width: 767px) {
   .latest-deals-card {
-    width: 33.33%;
-    max-width: 33.33%;
-    height: 200px;
+    width: 100%;
+    height: 88px;
+    max-width: none;
   }
 }
 
