@@ -15,6 +15,9 @@ html {
 
 .white-nav-bar {
   padding: 0px 15px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 } 
 
 .black-nav-bar {
@@ -142,6 +145,8 @@ main {
   font-size: 1.2rem;
   font-weight: 100;
   word-spacing: 0.12rem;
+  position: sticky;
+  top: 46px;
 }
 
 
