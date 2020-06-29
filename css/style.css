@@ -233,8 +233,37 @@ main {
 
 .cover-grid-story-1 {
   grid-area: main-story;
+  background:linear-gradient(145deg, rgba(247, 65, 16, 0.6), rgba(0, 0, 0, 0.8 )), url("/assets/images/zwickau-vw-car-factory-plug-in-electric-only-volkswagen-audi-seat-796x448.jpg") no-repeat;
+  background-size: cover;
+  
 }
 
+.grid-story-tnw-logo {
+  display: block;
+  width: 40%;
+  height: 20%;
+}
+
+.cover-date {
+  float: right;
+}
+
+.story-container {
+  clear: both;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cover-grid-story-2 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9 ), rgba(247, 65, 16, 0.4) 75%), url("/assets/images/cc_series_empty-1200x628.jpg");
+  background-size: cover;
+}
+
+.cover-grid-story-3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6 ) 90%), url("/assets/images/charger-image.jpeg");
+  background-size: cover;
+}
 /* LATEST NEWS */
 
 .latest-news {
