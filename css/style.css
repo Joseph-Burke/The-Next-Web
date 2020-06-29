@@ -360,6 +360,7 @@ main {
 }
 
 /* Funding rounds */
+
 .funding-rounds {
   max-width: 1152px;
   margin: 0 auto;
@@ -385,8 +386,6 @@ main {
 
 .funding-rounds-card-container {
   display: flex;
-  
-
 }
 
 .funding-rounds-card {
@@ -395,6 +394,31 @@ main {
   background: grey;
   border: 1px solid black;
   margin: 8px;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.funding-rounds-card-title,
+.funding-rounds-card-tags,
+.funding-rounds-card-description {
+  flex: 1;
+}
+
+.funding-rounds-card-logo {
+  height: 50px;
+  width: auto;
+  float: left;
+}
+
+
+.funding-rounds-card-tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style-type: none;
 }
 
 
