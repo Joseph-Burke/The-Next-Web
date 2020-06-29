@@ -116,16 +116,38 @@ html {
   position: sticky;
   top: 0;
   background-color: #fff;
+}
+
+.white-nav-bar,
+.black-nav-bar, 
+.conference-banner {
   padding-left: 15px;
 }
 
 .top-left-tnw-logo {
+  position: absolute;
+  bottom: 0px;
+  left: 23px;
   width: 106px;
-  height: 48px;
+  height: 46px;
   display: inline-flex;
   background: linear-gradient(90deg, #e13d65, #fc4324);
   justify-content: center;
   align-items: center;
+  margin-left: -23px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1023px) {
+  .white-nav-bar .nav-bar-right {
+    display: none;
+  }
+
+  .black-nav-bar, 
+  .conference-banner,
+  .white-nav-bar  {
+    padding-left: 120px;
+  }
 }
 
 .top-left-tnw-logo img{
@@ -147,6 +169,10 @@ html {
   .black-nav-bar {
     display: none;
   }
+
+  .top-left-tnw-logo {
+    height: 46px;
+  }
 }
 /* Main */
 
@@ -157,7 +183,8 @@ main {
 /* Conference Banner */
 
 .conference-banner {
-  padding: 8px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   background-color: #fd3;
   font-family: Helvetica, sans-serif;
   font-size: 1.2rem;
