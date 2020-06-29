@@ -450,6 +450,11 @@ footer {
   font-size: 2em;
   margin: 0px 8px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-site-link:hover {
+  color: #fff;
 }
 
 .footer-copyright-section {
