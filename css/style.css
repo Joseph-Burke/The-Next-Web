@@ -185,9 +185,9 @@ main {
 
 .cover-grid-story-1 {
   grid-area: main-story;
-  background:linear-gradient(145deg, rgba(247, 65, 16, 0.6), rgba(0, 0, 0, 0.8 )), url("/assets/images/zwickau-vw-car-factory-plug-in-electric-only-volkswagen-audi-seat-796x448.jpg") no-repeat;
+  background:linear-gradient(165deg, rgba(247, 65, 16, 1), rgba(247, 65, 16, 0.8) 30%, rgba(0, 0, 0, 0.8) 70%), url("/assets/images/zwickau-vw-car-factory-plug-in-electric-only-volkswagen-audi-seat-796x448.jpg") no-repeat;
   background-size: cover;
-  
+  position: relative;
 }
 
 .grid-story-tnw-logo {
@@ -197,7 +197,14 @@ main {
 }
 
 .cover-date {
-  float: right;
+  /* float: right; */
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .story-container {
@@ -248,7 +255,7 @@ main {
 
 .cover-story-info li {
   display: inline;
-  margin: 4px;
+  margin-right: 8px;
 }
 
 /* LATEST NEWS */
@@ -951,8 +958,16 @@ footer {
 
   .cover-grid {
     height: 75vh;
-    max-height: 560px;
-    min-height: 450px;
+    max-height: 600px;
+    min-height: 510px;
+  }
+
+  .grid-story-tnw-logo {
+    display: none;
+  }
+
+  .story-container {
+    justify-content: flex-end;
   }
 
   .latest-news-box {
@@ -1017,7 +1032,18 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "main-story" "." ".";
-    min-height: 90vh;
+    min-height: 440px;
+  }
+
+  .cover-grid-story-1
+  .cover-grid-story-2
+  .cover-grid-story-3 {
+    padding: 10px 10px 15px 10px;
+  }
+
+  .grid-story-headline, 
+  .cover-story-title {
+    font-size: 2rem;
   }
 
   .tnw-top-logo-container {
@@ -1027,10 +1053,6 @@ footer {
 
   .grid-story-tnw-logo {
     display: none;
-  }
-
-  .grid-story-headline {
-    font-size: 2.5rem;
   }
 
   .latest-news-box {
