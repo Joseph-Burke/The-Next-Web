@@ -501,12 +501,11 @@ main {
 }
 
 .sections-card {
-  flex: 1;
-  min-width: 30%;
-  height: 700px;
-  margin: 8px;
-  display: flex;
-  flex-direction: column;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 33.333%;
 }
 
 .sections-card-title {
