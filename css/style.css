@@ -717,7 +717,6 @@ main {
 
 .latest-deals-container {
   display: flex;
-  
   flex-wrap: wrap;
 }
 
@@ -987,8 +986,6 @@ footer {
     flex: 1;
     min-width: 229px;
     height: 270px;
-    background: grey;
-    border: 1px solid black;
     padding: 8px;
   }
   
@@ -1105,8 +1102,23 @@ footer {
     margin-right: 10px;
     min-width: 75px;
   }
+
   .latest-deals-card {
     display: flex;
   }
+
+  .latest-news-article-image {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    min-width: 75px;
+  }
+
+  .latest-news-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+
 }
 
