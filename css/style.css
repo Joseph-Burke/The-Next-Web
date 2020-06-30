@@ -117,6 +117,7 @@ html {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 5;
 }
 
 .white-nav-bar,
@@ -159,6 +160,7 @@ main {
   word-spacing: 0.12rem;
   position: sticky;
   top: 46px;
+  z-index: 5;
 }
 
 .grid-story-headline {
@@ -372,9 +374,17 @@ main {
   margin: 20px 0;
 }
 
-.funding-rounds-header {
-  color: red;
-  font-size: 1.8rem;
+.funding-rounds-title {
+  color: #FF4422;
+  font-size: 2.5rem;
+  padding-left: 8px;
+  font-family: Helvetica;
+}
+
+.funding-rounds-title .fa-chevron-right {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 3px 5px;
 }
 
 .funding-rounds header ul{
