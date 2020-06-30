@@ -19,7 +19,7 @@ Click [here](https://thenextweb.com/) to view The Next Web's website, which we u
 
 ## Live Demo 🔴
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://gallant-bose-07a376.netlify.app/)
 
 ## Getting Started 🏁
 
