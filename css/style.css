@@ -23,9 +23,11 @@ html {
   height: 46px;
 }
 
-.white-nav-bar .nav-bar-right button {
-  padding: 5px;
-  font-size: 1rem;
+.white-nav-bar .fa-search {
+  border-bottom: 1px solid #eee;
+  transform: rotate(90deg);
+  font-size: 1.6rem;
+  padding: 15px;
 }
 
 .black-nav-bar li,
@@ -937,10 +939,6 @@ footer {
 
 
 @media screen and (max-width: 1023px) {
-  .white-nav-bar .nav-bar-right {
-    display: none;
-  }
-
   .black-nav-bar, 
   .conference-banner,
   .white-nav-bar  {
@@ -1014,12 +1012,16 @@ footer {
     display: none;
   }
 
-  .top-left-tnw-logo {
-    height: 46px;
-  }
-  .ecosystems-text {
+  .white-nav-bar .white-nav-items:not(.nav-bar-right) {
     display: none;
   }
+
+  .top-left-tnw-logo {
+    height: 46px;
+    position: relative;
+    left: -120px;
+    margin-left: 0px;
+}
 
   .conference-banner {
     padding: 20px 125px;
@@ -1041,7 +1043,11 @@ footer {
 
   .grid-story-headline, 
   .cover-story-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .cover-date {
+    display: none;
   }
 
   .tnw-top-logo-container {
@@ -1096,7 +1102,7 @@ footer {
     flex-direction: column;
   }
 
-  .white-nav-items {
+  .white-nav-items:not(.nav-bar-right) {
     display: none;
   }
 
@@ -1122,7 +1128,16 @@ footer {
     display: flex;
     flex-direction: row;
   }
-
-
 }
 
+@media screen and (max-width: 435px) {
+  .conference-banner {
+    display: none;
+  }
+
+  .footer-social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80vw;
+}
+}
