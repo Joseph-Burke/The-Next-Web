@@ -515,9 +515,27 @@ main {
   margin-bottom: 10px;
 }
 
+/* Backgrounds */
+
+.sections-card-most-popular-5 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-podium-image.png");
+}
+
+.sections-card-most-popular-6 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-insights-image.png");
+}
+
+.sections-card-most-popular-7 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-launch-image.jpg");
+}
+
+.sections-card-most-popular-8 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-distract-image.png");
+}
+
 .sections-card-most-popular {
   height: 40%;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-1.jpg");
+  /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-1.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -528,12 +546,9 @@ main {
 }
 
 .sections-card-most-popular-text {
-  position: relative;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sections-card-most-popular-text p {
@@ -590,10 +605,30 @@ main {
 
 .sections-latest-image {
   width: 28%;
-  background-image: url("/assets/images/sections-latest-image-1.png");
   background-size: cover;
   background-position-x: 50%;
 }
+
+/* Latest image backgrounds */
+
+.sections-latest-image-5 {
+  background-image: url("/assets/images/section-latest-image-5.jpg");
+}
+
+.sections-latest-image-6 {
+  background-image: url("/assets/images/section-latest-image-6.jpg");
+}
+
+.sections-latest-image-7 {
+  background-image: url("/assets/images/section-latest-image-7.jpg");
+}
+
+.sections-latest-image-8 {
+  background-image: url("/assets/images/section-latest-image-8.jpg");
+}
+
+
+
 
 .sections-card-article-list {
   padding-left: 1rem;
