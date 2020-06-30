@@ -42,8 +42,6 @@ html {
   font-weight: 100;
 }
 
-
-
 .black-nav-bar li {
   cursor: pointer;
   padding: 8.5px 0px;
@@ -72,8 +70,6 @@ html {
 .dropdown-business-content {
   display: none;
   position: absolute;
-
-  
   z-index: 2;
   background-color: aliceblue;
 }
@@ -140,8 +136,6 @@ html {
   margin-right: 8px;
 }
 
-
-
 /* Main */
 
 main {
@@ -170,7 +164,6 @@ main {
   font-family: Helvetica;
 }
 
-
 /* Cover Grid */
 
 .cover-grid {
@@ -180,6 +173,7 @@ main {
   grid-template-areas: "main-story ." "main-story .";
   grid-gap: 8px;
   height: 72vh;
+  min-height: 400px;
 }
 
 
@@ -213,7 +207,6 @@ main {
   justify-content: space-between;
   padding: 20px 20px 30px 15px;
 }
-
 
 .cover-grid-story-2 {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.9 ), rgba(247, 65, 16, 0.4) 75%), url("/assets/images/cc_series_empty-1200x628.jpg");
@@ -266,9 +259,11 @@ main {
 }
 
 .latest-news h2 {
-  color: red;
-  font-size: 1.8rem;
-  padding-left: 10px;
+  color: #FF4422;
+  font-size: 2.5rem;
+  padding-left: 8px;
+  font-family: Helvetica;
+  margin: 20px 0px;
 }
 .latest-news-container {
   display: flex;
@@ -381,7 +376,7 @@ main {
   font-family: Helvetica;
 }
 
-.funding-rounds-title .fa-chevron-right {
+.fa-chevron-right {
   font-size: 2rem;
   line-height: 2.5rem;
   margin: 3px 5px;
@@ -515,28 +510,11 @@ main {
   margin-bottom: 10px;
 }
 
-/* Backgrounds */
-
-.sections-card-most-popular-5 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-podium-image.png");
-}
-
-.sections-card-most-popular-6 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-insights-image.png");
-}
-
-.sections-card-most-popular-7 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-launch-image.jpg");
-}
-
-.sections-card-most-popular-8 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-distract-image.png");
-}
-
 .sections-card-most-popular {
   height: 40%;
   color: white;
   padding: 15px;
+  margin-bottom: 1.5px;
   display: flex;
   align-items: flex-end;
   background-size: cover;
@@ -560,6 +538,22 @@ main {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-4.jpg");
 }
 
+.sections-card-most-popular-5 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-podium-image.png");
+}
+
+.sections-card-most-popular-6 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-insights-image.png");
+}
+
+.sections-card-most-popular-7 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-launch-image.jpg");
+}
+
+.sections-card-most-popular-8 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/most-popular-distract-image.png");
+}
+
 .sections-card-most-popular-text {
     display: flex;
     flex-direction: column;
@@ -575,6 +569,8 @@ main {
   font-family: Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 6px;
 }
 
 .sections-card-most-popular-details {
