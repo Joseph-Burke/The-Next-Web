@@ -8,12 +8,30 @@ html {
   font-size: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .black-nav-bar {
   height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.black-nav-bar-right li{
+  list-style-type: none;
+  display: inline;
 }
 
 .nav-bar-right {
   float: right;
+}
+
+.white-nav-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
 }
 
 .white-nav-bar .nav-bar-right {
@@ -23,7 +41,7 @@ html {
   height: 46px;
 }
 
-.white-nav-bar .fa-search {
+.fa-search {
   border-bottom: 1px solid #eee;
   transform: rotate(90deg);
   font-size: 1.6rem;
@@ -72,7 +90,7 @@ html {
 .dropdown-business-content {
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 20;
   background-color: aliceblue;
 }
 
@@ -112,8 +130,6 @@ html {
   font-size: 2.2rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
-  position: sticky;
-  top: 0;
   background-color: #fff;
   z-index: 5;
 }
@@ -741,7 +757,6 @@ main {
 
 .latest-deals-price {
   margin-top: 5px;
-  text-justify: center;
   font-family: Helvetica, sans-serif;
 }
 
@@ -847,7 +862,7 @@ footer {
   color: #eee;
   border-radius: 100%;
   padding: 10px 0px;
-  border: 1px solid #333;
+  border: 1px solid #334;
   cursor: pointer;
 }
 
@@ -1012,14 +1027,14 @@ footer {
     display: none;
   }
 
-  .white-nav-bar .white-nav-items:not(.nav-bar-right) {
+  .white-nav-bar .white-nav-items {
     display: none;
   }
 
   .top-left-tnw-logo {
     height: 46px;
     position: relative;
-    left: -120px;
+    left: 0;
     margin-left: 0px;
 }
 
@@ -1102,7 +1117,7 @@ footer {
     flex-direction: column;
   }
 
-  .white-nav-items:not(.nav-bar-right) {
+  .white-nav-items {
     display: none;
   }
 

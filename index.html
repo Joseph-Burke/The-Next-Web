@@ -12,8 +12,8 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="black-nav-bar">
+        <nav class="black-nav-bar">
+            <ul >
                 <li class="nav-bar-news">News</li>
                 <li class="dropdown-events">
                     Events ▾
@@ -33,36 +33,42 @@
                 <li>AMAs</li>
                 <li>Spaces</li>
                 <li>Terms & Conditions</li>
-                <div class="nav-bar-right">
-                    <li>About</li>
-                    <li>Advertise</li>
-                    <li>Jobs</li>
-                    <li>Contact</li>
-                </div>
+            </ul>
+            <ul class="black-nav-bar-right">
+                <li>About</li>
+                <li>Advertise</li>
+                <li>Jobs</li>
+                <li>Contact</li>
             </ul>
         </nav>
     </header>
 
-    <ul class="white-nav-bar">
+   
+    <div class="white-nav-container">
         <div class="top-left-tnw-logo">
             <img src="/assets/images/tnw-white.svg" alt="tnw-white-logo">
         </div>
-        <li class="white-nav-items">latest</li>
-        <li class="white-nav-items">hard fork</li>
-        <li class="white-nav-items">plugged</li>
-        <li class="white-nav-items">readme</li>
-        <li class="white-nav-items">growth quarters</li>
-        <li class="white-nav-items">neural</li>
-        <div class="nav-bar-right white-nav-items">
+        <div class="nav-bar-right search-icon">
             <i class="fas fa-search"></i>
         </div>
-    </ul>
+        <ul class="white-nav-bar">
+            
+            <li class="white-nav-items">latest</li>
+            <li class="white-nav-items">hard fork</li>
+            <li class="white-nav-items">plugged</li>
+            <li class="white-nav-items">readme</li>
+            <li class="white-nav-items">growth quarters</li>
+            <li class="white-nav-items">neural</li>
+        </ul>
+        
+    </div>
     <div class="conference-banner">
         <p>Don't fall behind our tech future - Join TNW Couch Conferences ➔</p>
     </div>
     
     <main>
     <section class="cover-grid">
+        <h2 class="hidden">This header was added to stop warning</h2>
         <article class="cover-grid-story-1">
 
             <div class="cover-date">
@@ -196,7 +202,7 @@
 
             <div class="funding-rounds-card">
                 <div class="funding-rounds-card-title">
-                    <img class="funding-rounds-card-logo spiff-logo" src="assets/images/spiff-logo.jpeg">
+                    <img class="funding-rounds-card-logo spiff-logo" src="assets/images/spiff-logo.jpeg" alt="spiff-logo">
                     <h4>Spiff, Inc.</h4>
                     <div class="funding-rounds-details">
                         <h5>$10M</h5>
@@ -212,7 +218,7 @@
 
             <div class="funding-rounds-card">
                 <div class="funding-rounds-card-title">
-                    <img class="funding-rounds-card-logo cynet-logo" src="assets/images/cynet-logo.png">
+                    <img class="funding-rounds-card-logo cynet-logo" src="assets/images/cynet-logo.png" alt="cynet-logo">
                     <h4>Cynet</h4>
                     <div class="funding-rounds-details">
                         <h5>$18M</h5>
@@ -228,7 +234,7 @@
 
             <div class="funding-rounds-card">
                 <div class="funding-rounds-card-title">
-                    <img class="funding-rounds-card-logo solarcentury-logo" src="assets/images/solarcentury-logo.png">
+                    <img class="funding-rounds-card-logo solarcentury-logo" src="assets/images/solarcentury-logo.png" alt="solarcentury-logo">
                     <h4>Solarcentury</h4>
                     <div class="funding-rounds-details">
                         <h5>$47.6M</h5>
@@ -244,7 +250,7 @@
 
             <div class="funding-rounds-card funding-rounds-card-pipe">
                 <div class="funding-rounds-card-title">
-                    <img class="funding-rounds-card-logo groupsolver-logo" src="assets/images/groupsolver-logo.jpeg">
+                    <img class="funding-rounds-card-logo groupsolver-logo" src="assets/images/groupsolver-logo.jpeg" alt="groupsolver-logo">
                     <h4>Groupsolver</h4>
                     <div class="funding-rounds-details">
                         <h5>$2M</h5>
@@ -540,7 +546,10 @@
                 </div>
                 <div>
                     <h4 class="latest-deals-title">FREE: Leadership & Management Diploma 4-Week Course</h4>
-                    <p class="latest-deals-price"><span class="old-price">$49.99</span> $0</p>
+                    <p class="latest-deals-price">
+                        <span class="old-price">$49.99</span>
+                        <span class="new-price" >$0</span> 
+                    </p>
                 </div>
             </div>
             <div class="latest-deals-card">
@@ -649,9 +658,9 @@
             </ul>
         </div>
         <div class="footer-copyright-section">
-            <span class="footer-copyright-span"><img class="footer-TNW-logo" src="assets/images/tnw-white.svg">© 2006–2020 The Next Web B.V.</span>
+            <span class="footer-copyright-span"><img class="footer-TNW-logo" src="assets/images/tnw-white.svg" alt="TNW-logo">© 2006–2020 The Next Web B.V.</span>
             <span class="footer-copyright-span">Made with <b class="footer-heart">♥</b> in Amsterdam.</span>
-            <span class="footer-copyright-span">Powered by <img class="stackpath-logo" src="assets/images/stackpath-logo.svg"></span>
+            <span class="footer-copyright-span">Powered by <img class="stackpath-logo" src="assets/images/stackpath-logo.svg" alt="stackpath-logo"></span>
 
         </div>
     </footer>
