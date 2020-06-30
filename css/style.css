@@ -535,14 +535,29 @@ main {
 
 .sections-card-most-popular {
   height: 40%;
-  /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-1.jpg"); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: 50%;
   color: white;
   padding: 15px;
   display: flex;
   align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.sections-card-most-popular-1 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-1.jpg");
+}
+
+.sections-card-most-popular-2 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-2.png");
+}
+
+.sections-card-most-popular-3 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-3.jpg");
+}
+
+.sections-card-most-popular-4 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8 ) 90%), url("/assets/images/sections-card-image-4.jpg");
 }
 
 .sections-card-most-popular-text {
@@ -611,6 +626,22 @@ main {
 
 /* Latest image backgrounds */
 
+.sections-latest-image-1 {
+  background-image: url("/assets/images/sections-latest-image-1.png");
+}
+
+.sections-latest-image-2 {
+  background-image: url("/assets/images/sections-latest-image-2.png");
+}
+
+.sections-latest-image-3 {
+  background-image: url("/assets/images/sections-latest-image-3.png");
+}
+
+.sections-latest-image-4 {
+  background-image: url("/assets/images/sections-latest-image-4.png");
+}
+
 .sections-latest-image-5 {
   background-image: url("/assets/images/section-latest-image-5.jpg");
 }
@@ -626,9 +657,6 @@ main {
 .sections-latest-image-8 {
   background-image: url("/assets/images/section-latest-image-8.jpg");
 }
-
-
-
 
 .sections-card-article-list {
   padding-left: 1rem;
@@ -654,7 +682,6 @@ main {
   width: 1rem;
   margin-left: -1rem;
 }
-
 
 /* Latest deals */
 
