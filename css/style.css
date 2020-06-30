@@ -769,7 +769,9 @@ footer {
   .cover-grid {
     height: 75vh;
     max-height: 560px;
+    min-height: 450px;
   }
+
   .latest-news-box {
     max-width: 32%;
     flex: 1;
