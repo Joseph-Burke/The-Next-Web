@@ -387,11 +387,18 @@ main {
   margin: 3px 5px;
 }
 
-.funding-rounds header ul{
+.funding-rounds-header-links {
   display: flex;
   list-style-type: none;
   color: red;
   font-size: 1.6rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  padding: 0px 8px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .funding-rounds-card-container {
@@ -763,19 +770,15 @@ footer {
     padding-left: 120px;
   }
 
-  
-  
   .top-left-tnw-logo img{
     width: 66px;
     height: 16px;
   }
   
-  
   .white-nav-bar li:hover {
     color: black;
   }
 
-  
   .cover-grid {
     height: 75vh;
     max-height: 560px;
@@ -807,10 +810,16 @@ footer {
   .funding-rounds header {
     flex-direction: column;
   }
+
+  .funding-rounds-header-links {
+    flex-direction: row;
+  }
+
   .sections-card {
     flex-basis: calc(50% - 16px);
     flex-grow: 0;
   }
+
   .latest-deals-card {
     width: 33.33%;
     max-width: 33.33%;
@@ -833,6 +842,7 @@ footer {
   .conference-banner {
     padding: 20px 125px;
   }
+
   .cover-grid {
     height: 53vh;
     grid-template-columns: 1fr;
@@ -847,16 +857,18 @@ footer {
   }
 
   .grid-story-tnw-logo {
-    display: none!important;
+    display: none;
   }
 
   .grid-story-headline {
     font-size: 2.5rem;
   }
+
   .latest-news-box {
     min-width: 100%;
     height: 95px;
   }
+
   .funding-rounds-card {
     flex-basis: calc(100% - 16px);
     height: 95px;
@@ -865,6 +877,18 @@ footer {
   .funding-rounds-card-container {
     flex-wrap: wrap; 
   }
+
+  .funding-rounds-header-links {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 80px;
+    margin-top: 15px;
+  }
+
+  .funding-rounds-header-links .divider {
+    display: none;
+  }
+
 
   .sections-card {
     flex-basis: calc(100% - 16px);
