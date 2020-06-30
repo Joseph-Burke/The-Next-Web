@@ -531,7 +531,6 @@ main {
   width: 25%;
   max-width: 25%;
   height: 310px;
-  
   padding: 10px 8px;
   
 }
@@ -539,19 +538,31 @@ main {
 .latest-deals-title {
   font-size: 1.6rem;
   word-spacing: .1rem;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   margin-top: 5px;
+  margin-top: 10px;
 }
 
 .latest-deals-price {
-  font-size: 1.4rem;
   margin-top: 5px;
+  text-justify: center;
+  font-family: Helvetica, sans-serif;
 }
 
-.latest-deals-price span {
+.latest-deals-price .old-price {
+  font-size: 1.3rem;
   text-decoration: line-through;
   color: rgb(172, 170, 170);
+  font-weight: 300;
 }
+
+.latest-deals-price .new-price {
+  font-size: 1.65rem;
+  color: #555;
+  margin-left: 5px;
+  font-weight: 300;
+}
+
 .latest-deals-image-box-1 {
   width: 100%;
   height: 70%;
