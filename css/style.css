@@ -549,7 +549,7 @@ main {
 }
 
 .sections-card-most-popular-details {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.5);
   font-size: 1.1rem;
   font-family: Helvetica;
 }
@@ -569,6 +569,7 @@ main {
 .sections-latest-text {
   width: 72%;
   padding-left: 10px;
+  padding-right: 15px;
 }
 
 .sections-latest-text h6 {
@@ -581,7 +582,8 @@ main {
 
 .sections-latest-text p {
   color: #FF4422;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
   font-weight: 600;
   font-family: Helvetica;
   margin-top: 5px;
@@ -594,9 +596,32 @@ main {
   background-position-x: 50%;
 }
 
-.sections-list {
+.sections-card-article-list {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  font-family: Helvetica;
+  color: #666;
   list-style-type: none;
 }
+
+.sections-card-article-list li {
+  border-bottom: 1px solid #eee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sections-card-article-list li::before {
+  content: "\2022";
+  color: #FF4422;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+
+
 /* Latest deals */
 
 .latest-deals {
