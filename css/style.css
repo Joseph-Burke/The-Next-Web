@@ -928,8 +928,7 @@ footer {
   }
 
   .sections-card {
-    flex-basis: calc(50% - 16px);
-    flex-grow: 0;
+    width: 50%;
   }
 
   .latest-deals-card {
@@ -1003,7 +1002,7 @@ footer {
 
 
   .sections-card {
-    flex-basis: calc(100% - 16px);
+    width: 100%;
   }
 
   .latest-deals-card {
