@@ -896,7 +896,6 @@ footer {
   padding-left: 14px;
   padding-right: 14px;
   margin-left: -1px;
-  margin-right: -5px;
 }
 
 /* Footer Site Links */
@@ -1144,6 +1143,10 @@ footer {
 }
 
 @media screen and (max-width: 435px) {
+  body {
+    width: 112%;
+  }
+
   .conference-banner {
     display: none;
   }
