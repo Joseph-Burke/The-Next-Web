@@ -1,0 +1,1159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.black-nav-bar {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1.3rem;
+  letter-spacing: 0.01rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.black-nav-bar-right li {
+  list-style-type: none;
+  display: inline;
+}
+
+.nav-bar-right {
+  float: right;
+}
+
+.white-nav-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.white-nav-bar .nav-bar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 46px;
+}
+
+.fa-search {
+  border-bottom: 1px solid #eee;
+  transform: rotate(90deg);
+  font-size: 1.6rem;
+  padding: 15px;
+  color: #aaa;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 1.6rem;
+  padding: 15px;
+  color: #f42;
+  border-left: 1px solid #eee;
+}
+
+.black-nav-bar li,
+.white-nav-bar li {
+  display: inline-block;
+}
+
+.black-nav-bar li {
+  cursor: pointer;
+  padding: 8.5px 0;
+  padding-right: 5px;
+}
+
+.white-nav-bar li {
+  cursor: pointer;
+  padding: 9px 20px 9px 0;
+}
+
+.dropdown-events,
+.dropdown-business {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-events-content,
+.dropdown-business-content {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  background-color: aliceblue;
+}
+
+.dropdown-events-content p,
+.dropdown-business-content p {
+  color: hsla(0, 0%, 100%, 0.6);
+  width: 200px;
+  border-bottom: 0.01rem solid hsla(0, 0%, 20%, 0.6);
+  background-color: #131313;
+  padding: 5px;
+  font-size: 1.35rem;
+}
+
+.cover-story-info li {
+  display: inline;
+  margin-right: 8px;
+}
+
+.latest-news-article-info li {
+  display: inline;
+}
+
+.sections-card-most-popular-text p {
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.3rem;
+}
+
+.sections-card-most-popular-details li {
+  display: inline;
+}
+
+.sections-latest-text p {
+  color: #f42;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  font-family: Helvetica, sans-serif;
+  margin-top: 5px;
+}
+
+.sections-card-article-list li {
+  border-bottom: 1px solid #eee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.latest-deals-header p {
+  color: #fe4422;
+  font-size: 1.5rem;
+  font-family: Helvetica, sans-serif;
+  word-spacing: 0.1rem;
+  padding-right: 8px;
+}
+
+.black-nav-bar li:hover,
+.nav-bar-news,
+.dropdown-events-content p:hover,
+.dropdown-business-content p:hover {
+  color: #fff;
+}
+
+.dropdown-events:hover .dropdown-events-content,
+.dropdown-events:hover .dropdown-events-content p,
+.dropdown-business:hover .dropdown-business-content {
+  display: block;
+  animation: dropdown-animation 0.4s 1;
+  left: -8px;
+  top: 33px;
+}
+
+@keyframes dropdown-animation {
+  from {
+    top: 40px;
+  }
+
+  to {
+    top: 33px;
+  }
+}
+
+.white-nav-bar {
+  font-family: Rajdhani, sans-serif;
+  color: #aaa;
+  font-variant: small-caps;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.white-nav-bar,
+.black-nav-bar,
+.conference-banner {
+  padding-left: 15px;
+}
+
+.top-left-tnw-logo {
+  position: absolute;
+  bottom: 0;
+  left: 23px;
+  width: 106px;
+  height: 46px;
+  display: inline-flex;
+  background: linear-gradient(90deg, #e13d65, #fc4324);
+  justify-content: center;
+  align-items: center;
+  margin-left: -23px;
+  margin-right: 8px;
+}
+
+/* Main */
+
+main {
+  padding: 1px 8px 0 8px;
+}
+
+/* Conference Banner */
+
+.conference-banner {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #fd3;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  word-spacing: 0.12rem;
+  position: sticky;
+  top: 46px;
+  z-index: 5;
+}
+
+.grid-story-headline {
+  color: white;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Cover Grid */
+
+.cover-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "main-story ." "main-story .";
+  grid-gap: 8px;
+  height: 72vh;
+  min-height: 400px;
+}
+
+.cover-grid-story-1,
+.cover-grid-story-2,
+.cover-grid-story-3 {
+  background: #333;
+}
+
+.cover-grid-story-1 {
+  grid-area: main-story;
+  background: linear-gradient(165deg, rgba(247, 65, 16, 1), rgba(247, 65, 16, 0.8) 30%, rgba(0, 0, 0, 0.8) 70%), url("/assets/images/zwickau-vw-car-factory-plug-in-electric-only-volkswagen-audi-seat-796x448.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-story-tnw-logo {
+  display: block;
+  width: 40%;
+  height: 20%;
+}
+
+.cover-date {
+  /* float: right; */
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.story-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 30px 15px;
+}
+
+.cover-grid-story-2 {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(247, 65, 16, 0.4) 75%), url("/assets/images/cc_series_empty-1200x628.jpg");
+  background-size: cover;
+  padding: 20px 20px 30px 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cover-story-title {
+  color: white;
+  font-size: 2.7rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.cover-story-section {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+  font-family: Rajdhani, sans-serif;
+}
+
+.cover-grid-story-3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) 90%), url("/assets/images/bitcoin-cover-image.jpg");
+  background-size: cover;
+  padding: 20px 20px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cover-story-info {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 4px;
+}
+
+/* LATEST NEWS */
+
+.latest-news {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.latest-news h2 {
+  color: #f42;
+  font-size: 2.5rem;
+  padding-left: 8px;
+  font-family: Helvetica, sans-serif;
+  margin: 20px 0;
+}
+
+.latest-news-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.latest-news-box {
+  min-width: 240px;
+  flex: 1;
+  height: 241px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.latest-news-box img {
+  width: 80%;
+  height: auto;
+}
+
+.latest-news-article-image {
+  height: 135px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 7px;
+}
+
+.latest-news-box-1 .latest-news-article-image {
+  background: url("/assets/images/article-image-california-diesel.png");
+  background-size: cover;
+}
+
+.latest-news-box-2 .latest-news-article-image {
+  background: url("/assets/images/article-image-volkswagen.jpg");
+  background-size: cover;
+}
+
+.latest-news-box-3 .latest-news-article-image {
+  background: url("/assets/images/article-image-charger.jpg");
+  background-size: cover;
+}
+
+.latest-news-box-4 .latest-news-article-image {
+  background: url("/assets/images/article-image-black-pink.jpg");
+  background-size: cover;
+}
+
+.latest-news-box-5 .latest-news-article-image {
+  background: url("/assets/images/article-image-cyber-security.png");
+  background-size: cover;
+}
+
+.latest-news-box-6 .latest-news-article-image {
+  background: url("/assets/images/article-image-digital-poetry.png");
+  background-size: cover;
+}
+
+.latest-news-box-7 .latest-news-article-image {
+  background: url("/assets/images/article-image-space-exploration.png");
+  background-size: cover;
+}
+
+.latest-news-box-8 .latest-news-article-image {
+  background: url("/assets/images/article-image-artificial-intelligence.jpg");
+  background-size: cover;
+}
+
+.latest-news-article-title {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 7px;
+  font-family: Helvetica, sans-serif;
+}
+
+.latest-news-article-info {
+  list-style-type: none;
+  font-size: 1.3rem;
+  color: #aaa;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+/* Funding rounds */
+
+.funding-rounds {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.funding-rounds header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.funding-rounds-title {
+  color: #f42;
+  font-size: 2.5rem;
+  padding-left: 8px;
+  font-family: Helvetica, sans-serif;
+}
+
+.fa-chevron-right {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 3px 5px;
+}
+
+.funding-rounds-header-links {
+  display: flex;
+  list-style-type: none;
+  color: red;
+  font-size: 1.6rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  padding: 0 8px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.funding-rounds-card-container {
+  display: flex;
+}
+
+.funding-rounds-card {
+  flex: 1;
+  height: 270px;
+  background: white;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.funding-rounds-card-title,
+.funding-rounds-card-tags,
+.funding-rounds-card-description {
+  flex: 1;
+}
+
+.funding-rounds-card-logo {
+  height: 55px;
+  width: auto;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  float: left;
+}
+
+.funding-rounds-card-title h4 {
+  background: #f42;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: white;
+  padding: 10px 0 10px 77px;
+  font-weight: 700;
+}
+
+.funding-rounds-details {
+  padding: 10px 0 10px 77px;
+  font-size: 1.4rem;
+  background: rgba(255, 68, 34, 0.12);
+}
+
+.funding-rounds-details h5 {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.funding-rounds-details h6 {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Rajdhani, sans-serif;
+  font-weight: 400;
+}
+
+.funding-rounds-card-tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style-type: none;
+  padding-left: 10px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #555;
+  background: rgba(255, 67, 34, 0.05);
+  border-bottom: 1px solid rgba(255, 67, 34, 0.25);
+}
+
+.funding-rounds-card-tags i {
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.funding-rounds-card-description {
+  background: rgba(255, 67, 34, 0.05);
+  padding: 12px 20px 10px 15px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.funding-rounds-card-description span {
+  color: #aaa;
+}
+
+/* Sections container */
+
+.sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.sections-card {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  width: 33.333%;
+}
+
+.sections-card-title {
+  color: #f42;
+  font-size: 2.5rem;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.sections-card-most-popular {
+  height: 40%;
+  color: white;
+  padding: 15px;
+  margin-bottom: 1.5px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.sections-card-most-popular-1 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/sections-card-image-1.jpg");
+}
+
+.sections-card-most-popular-2 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/sections-card-image-2.png");
+}
+
+.sections-card-most-popular-3 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/sections-card-image-3.jpg");
+}
+
+.sections-card-most-popular-4 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/sections-card-image-4.jpg");
+}
+
+.sections-card-most-popular-5 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/most-popular-podium-image.png");
+}
+
+.sections-card-most-popular-6 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/most-popular-insights-image.png");
+}
+
+.sections-card-most-popular-7 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/most-popular-launch-image.jpg");
+}
+
+.sections-card-most-popular-8 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%), url("/assets/images/most-popular-distract-image.png");
+}
+
+.sections-card-most-popular-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sections-card-most-popular-text h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.sections-card-most-popular-details {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.sections-latest {
+  display: flex;
+  height: 96px;
+  justify-content: space-between;
+  background-color: rgba(255, 67, 34, 0.05);
+}
+
+.sections-latest-text {
+  width: 82%;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.sections-latest-text h6 {
+  color: #f42;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 500;
+}
+
+.sections-latest-image {
+  width: 96px;
+  height: 96px;
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+/* Latest image backgrounds */
+
+.sections-latest-image-1 {
+  background-image: url("/assets/images/sections-latest-image-1.png");
+}
+
+.sections-latest-image-2 {
+  background-image: url("/assets/images/sections-latest-image-2.png");
+}
+
+.sections-latest-image-3 {
+  background-image: url("/assets/images/sections-latest-image-3.png");
+}
+
+.sections-latest-image-4 {
+  background-image: url("/assets/images/sections-latest-image-4.png");
+}
+
+.sections-latest-image-5 {
+  background-image: url("/assets/images/section-latest-image-5.jpg");
+}
+
+.sections-latest-image-6 {
+  background-image: url("/assets/images/section-latest-image-6.jpg");
+}
+
+.sections-latest-image-7 {
+  background-image: url("/assets/images/section-latest-image-7.jpg");
+}
+
+.sections-latest-image-8 {
+  background-image: url("/assets/images/section-latest-image-8.jpg");
+}
+
+.sections-card-article-list {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  font-family: Helvetica, sans-serif;
+  color: #666;
+  list-style-type: none;
+}
+
+.sections-card-article-list li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
+}
+
+/* Latest deals */
+
+.latest-deals {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.latest-deals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.latest-deals-header h2 {
+  color: #fe4422;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: Helvetica, sans-serif;
+  padding-left: 8px;
+}
+
+.latest-deals-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-deals-card {
+  width: 25%;
+  max-width: 25%;
+  height: 310px;
+  padding: 10px 8px;
+}
+
+.latest-deals-title {
+  font-size: 1.6rem;
+  word-spacing: 0.1rem;
+  font-family: Helvetica, sans-serif;
+  margin-top: 5px;
+  margin-top: 10px;
+}
+
+.latest-deals-price {
+  margin-top: 5px;
+  font-family: Helvetica, sans-serif;
+}
+
+.latest-deals-price .old-price {
+  font-size: 1.3rem;
+  text-decoration: line-through;
+  color: rgb(172, 170, 170);
+  font-weight: 300;
+}
+
+.latest-deals-price .new-price {
+  font-size: 1.65rem;
+  color: #555;
+  margin-left: 5px;
+  font-weight: 300;
+}
+
+.latest-deals-image-box-1 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-1.png");
+  background-size: cover;
+}
+
+.latest-deals-image-box-2 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-2.png");
+  background-size: cover;
+}
+
+.latest-deals-image-box-3 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-3.png");
+  background-size: cover;
+}
+
+.latest-deals-image-box-4 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-4.png");
+  background-size: cover;
+}
+
+.latest-deals-image-box-5 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-5.png");
+  background-size: cover;
+}
+
+.latest-deals-image-box-6 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-6.png");
+  background-size: cover;
+}
+
+.latest-deals-image-box-7 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-7.png");
+  background-size: cover;
+}
+
+.latest-deals-image-box-8 {
+  width: 100%;
+  height: 70%;
+  background-image: url("/assets/images/latest-deals-image-8.png");
+  background-size: cover;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+}
+
+.footer-social-section {
+  height: 161px;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 370px;
+}
+
+.social-icon {
+  font-size: 2.2rem;
+  background-color: #333;
+  color: #eee;
+  border-radius: 100%;
+  padding: 10px 0;
+  border: 1px solid #334;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.social-icon:hover {
+  background-color: #000;
+}
+
+.footer-social-icons .fa-youtube {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.footer-social-icons .fa-envelope {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-social-icons .fa-facebook-square,
+.footer-social-icons .fa-twitter {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.footer-social-icons .fa-instagram,
+.footer-social-icons .fa-rss {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.footer-social-icons .fa-pinterest-p {
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: -1px;
+}
+
+/* Footer Site Links */
+
+.footer-site-links {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.footer-site-link {
+  display: inline;
+  font-family: Rajdhani, sans-serif;
+  font-variant: small-caps;
+  color: #aaa;
+  font-size: 2em;
+  margin: 0 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-site-link:hover {
+  color: #fff;
+}
+
+.footer-copyright-section {
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-family: Helvetica, sans-serif;
+  height: 97px;
+  background-color: #000;
+}
+
+.footer-copyright-span,
+.footer-TNW-logo {
+  margin: 0 3.5px;
+}
+
+.footer-heart {
+  color: red;
+}
+
+.stackpath-logo,
+.footer-TNW-logo {
+  height: 1.3rem;
+  width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .top-left-tnw-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .black-nav-bar,
+  .conference-banner,
+  .white-nav-bar {
+    padding-left: 120px;
+  }
+
+  .top-left-tnw-logo img {
+    width: 66px;
+    height: 16px;
+  }
+
+  .white-nav-bar li:hover {
+    color: black;
+  }
+
+  .cover-grid {
+    height: 75vh;
+    max-height: 600px;
+    min-height: 510px;
+  }
+
+  .grid-story-tnw-logo {
+    display: none;
+  }
+
+  .story-container {
+    justify-content: flex-end;
+  }
+
+  .latest-news-box {
+    max-width: 32%;
+    flex: 1;
+  }
+
+  .latest-news-container {
+    justify-content: flex-start;
+  }
+
+  .funding-rounds-card-pipe {
+    display: none;
+  }
+
+  .funding-rounds-card {
+    flex: 1;
+    min-width: 229px;
+    height: 270px;
+    padding: 8px;
+  }
+
+  .funding-rounds header {
+    flex-direction: column;
+  }
+
+  .funding-rounds-header-links {
+    flex-direction: row;
+  }
+
+  .sections-card {
+    width: 50%;
+  }
+
+  .latest-deals-card {
+    width: 33.33%;
+    max-width: 33.33%;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .black-nav-bar {
+    display: none;
+  }
+
+  .white-nav-items {
+    display: none;
+  }
+
+  .white-nav-bar .white-nav-items {
+    display: none;
+  }
+
+  .fa-bars {
+    display: inline;
+  }
+
+  .top-left-tnw-logo {
+    height: 46px;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .conference-banner {
+    padding: 20px 125px;
+  }
+
+  .cover-grid {
+    height: 53vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "main-story" "." ".";
+    min-height: 440px;
+  }
+
+  .cover-grid-story-1,
+  .cover-grid-story-2,
+  .cover-grid-story-3 {
+    padding: 10px 10px 15px 10px;
+  }
+
+  .grid-story-headline,
+  .cover-story-title {
+    font-size: 1.6rem;
+  }
+
+  .cover-date {
+    display: none;
+  }
+
+  .tnw-top-logo-container {
+    display: block;
+    position: fixed;
+  }
+
+  .grid-story-tnw-logo {
+    display: none;
+  }
+
+  .latest-news-box {
+    min-width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .funding-rounds-card {
+    flex-basis: 100%;
+  }
+
+  .funding-rounds-card-container {
+    flex-wrap: wrap;
+  }
+
+  .funding-rounds-header-links {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 80px;
+    margin-top: 15px;
+  }
+
+  .funding-rounds-header-links .divider {
+    display: none;
+  }
+
+  .sections-card-most-popular {
+    height: 60vw;
+  }
+
+  .sections-card {
+    width: 100%;
+    height: 620px;
+  }
+
+  .latest-deals-card {
+    width: 100%;
+    height: 88px;
+    max-width: none;
+    display: flex;
+  }
+
+  .footer-copyright-section {
+    flex-direction: column;
+  }
+
+  .latest-deals-mobile-image {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    min-width: 75px;
+  }
+
+  .latest-news-article-image {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    min-width: 75px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  body {
+    width: 112%;
+  }
+
+  .conference-banner {
+    display: none;
+  }
+
+  .footer-social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80vw;
+  }
+}
