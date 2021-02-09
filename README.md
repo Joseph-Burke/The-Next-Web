@@ -1,8 +1,8 @@
 # The Next Web 
 
-> For this project, we recreated The Next Web's website with fully responsive web design.
+For this project, we recreated The Next Web's website with fully responsive web design.
 
-> This Microverse project allowed us to demonstrate the use of media queries to design webpages that adapt to different screen sizes.
+This Microverse project allowed us to demonstrate the use of media queries to design webpages that adapt to different screen sizes.
 
 ![screenshot](screenshots/screenshot-1.png)
 
